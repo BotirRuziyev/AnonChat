@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>home page</title>
+</head>
+
+<body>
+    <!-- lang start -->
+    <div class="lang">
+        <div class="main_container d-flex align-items-center justify-content-end">
+            <div class="lang_in d-flex align-items-center">
+                <button class="lang_btn d-flex align-items-center justify-content-center">
+                    <img src="./assets/img/icons/flag1.svg" alt="flag">
+                </button>
+                <button class="lang_btn d-flex align-items-center justify-content-center active">
+                    <img src="./assets/img/icons/flag2.svg" alt="flag">
+                </button>
+                <button class="lang_btn d-flex align-items-center justify-content-center">
+                    <img src="./assets/img/icons/flag3.svg" alt="flag">
+                </button>
+                <button class="lang_btn d-flex align-items-center justify-content-center">
+                    <img src="./assets/img/icons/flag4.svg" alt="flag">
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- lang end -->
+    <!-- create chat start -->
+    <div class="create_chat d-flex justify-content-center">
+        <div class="create_chat_in d-flex flex-column align-items-center">
+            <div class="logo">
+                <a href="#">
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="join_chat d-flex flex-column align-items-center">
+                <button class="join_chat_btn modal_btn" data-filter="createchat">
+                    <span>Создать чат</span>
+                </button>
+                <div class="join_existing_chat_btn modal_btn" data-filter="existingchat">Подключиться к существующему
+                    чату</div>
+            </div>
+            <div class="create_chat_bottom d-flex justify-content-between position-relative">
+                <div class="create_chat_bottom_item position-sm-relative">
+                    <a class="create_chat_link">
+                        <img src="./assets/img/icons/vpn.svg" alt="vpn">
+                        <div class="description">Автоматическое <br> подключение VPN</div>
+                    </a>
+                    <div class="item_menu position-absolute">
+                        Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение
+                        нашей деятельности способствует подготовки и реализации направлений прогрессивного развития.
+                        Товарищи! постоянный количественный рост
+                    </div>
+                </div>
+                <div class="create_chat_bottom_item position-sm-relative">
+                    <a class="create_chat_link d-flex flex-column align-items-center">
+                        <img src="./assets/img/icons/parol.svg" alt="parol">
+                        <div class="description">Защита чата <br> паролем</div>
+                    </a>
+                    <div class="item_menu item_menu_two position-absolute">
+                        Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение
+                        нашей деятельности способствует подготовки и реализации направлений прогрессивного развития.
+                        Товарищи! постоянный количественный рост 222
+                    </div>
+                </div>
+                <div class="create_chat_bottom_item position-sm-relative">
+                    <a class="create_chat_link d-flex flex-column align-items-center">
+                        <img src="./assets/img/icons/vpn.svg" alt="vpn">
+                        <div class="description">Защита <br> информации</div>
+                    </a>
+                    <div class="item_menu position-absolute">
+                        Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение
+                        нашей деятельности способствует подготовки и реализации направлений прогрессивного развития.
+                        Товарищи! постоянный количественный рост
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- create chat end -->
+
+    <!-- modal -->
+    <div id="createchat" class="modal_wrapper create_chat_modal d-flex align-items-center">
+        <div class="modal_in">
+            <div class="head d-flex align-items-center justify-content-between">
+                <span class="title">Создать чат</span>
+                <button class="close_modal" data-filter="createchat">
+                    <img src="./assets/img/icons/close.svg" alt="close">
+                </button>
+            </div>
+            <div class="chat_link form_edit d-sm-flex align-items-center">
+                <div class="label">Ссылка на чат</div>
+                <div class="form_control d-flex align-items-stretch">
+                    <input type="text" name="" id="chatlink" value="anonchat.ru/join/7eeF74e36R49ER4nMm"
+                        placeholder="Введите название...">
+                    <button class="chat_link_copy_btn d-flex align-items-center">
+                        <img src="./assets/img/icons/copy.svg" alt="copy">
+                        Копировать
+                    </button>
+                </div>
+            </div>
+            <div class="parol form_edit d-sm-flex align-items-center">
+                <div class="label">Пароль</div>
+                <div class="form_control d-flex align-items-stretch">
+                    <input type="text" name="" id="parol" value="sadjiIDm4" placeholder="Введите пароль...">
+                    <button class="parol_edit_btn d-flex align-items-center">
+                        <img src="./assets/img/icons/pencil.svg" alt="pencil">
+                    </button>
+                </div>
+            </div>
+            <div class="form-check d-flex align-items-center justify-content-sm-start justify-content-center">
+                <div class="left_block d-sm-block d-none"></div>
+                <div class="d-flex align-items-center">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                    </label>
+                </div>
+            </div>
+            <div class="modal_btns d-flex align-items-center justify-content-end">
+                <a href="./chat.html" class="chat_go_btn">Перейти в чат</a>
+                <button class="ready_btn">Готово</button>
+            </div>
+        </div>
+    </div>
+    <div id="existingchat" class="modal_wrapper existing_chat_join_modal d-flex align-items-center">
+        <div class="modal_in">
+            <div class="head d-flex align-items-center justify-content-between">
+                <span class="title">Подключиться к существующему чату</span>
+                <button class="close_modal" data-filter="existingchat">
+                    <img src="./assets/img/icons/close.svg" alt="close">
+                </button>
+            </div>
+            <div class="chat_link form_edit d-sm-flex align-items-center">
+                <div class="label">Ссылка на чат</div>
+                <div class="form_control d-flex align-items-stretch">
+                    <input type="text" name="" id="chatlink2" placeholder="Введите название...">
+                </div>
+            </div>
+            <div class="parol form_edit d-sm-flex align-items-center">
+                <div class="label">Пароль</div>
+                <div class="form_control d-flex align-items-stretch">
+                    <input type="password" name="" id="parol2" placeholder="Введите пароль...">
+                </div>
+            </div>
+            <div class="modal_btns d-flex align-items-center justify-content-end">
+                <button class="add_btn">Добавить</button>
+                <button class="cancel_btn close_modal" data-filter="existingchat">Отмена</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- js -->
+    <script src="./assets/libs/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
